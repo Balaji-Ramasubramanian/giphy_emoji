@@ -1,0 +1,34 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    dotenv (2.2.1)
+    gemoji (3.0.0)
+    httparty (0.16.1)
+      multi_xml (>= 0.5.2)
+    json (2.1.0)
+    multi_xml (0.6.0)
+    mustermann (1.0.2)
+    rack (2.0.4)
+    rack-protection (2.0.1)
+      rack
+    rake (12.3.0)
+    sinatra (2.0.1)
+      mustermann (~> 1.0)
+      rack (~> 2.0)
+      rack-protection (= 2.0.1)
+      tilt (~> 2.0)
+    tilt (2.0.8)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  dotenv
+  gemoji
+  httparty
+  json
+  rake
+  sinatra
+
+BUNDLED WITH
+   1.16.0
