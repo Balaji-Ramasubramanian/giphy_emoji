@@ -41,7 +41,7 @@ class TwitterBot
 				break
 			end
 		end
-		handle_events
+		# handle_events
 	end
 
 end
