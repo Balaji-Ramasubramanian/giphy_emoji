@@ -5,3 +5,5 @@ gem 'httparty'
 gem 'dotenv'
 gem 'json'
 gem 'gemoji'
+gem 'twitter'
+
