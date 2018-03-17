@@ -1,9 +1,9 @@
-require "twitter"
+require 'twitter'
 require 'dotenv/load'
-require "httparty"
-require "gemoji"
-require_relative "../utils"
-require_relative "../config/initialize.rb"
+require 'httparty'
+require 'gemoji'
+require_relative '../utils'
+require_relative '../config/initialize.rb'
 
 class TwitterBot
 
