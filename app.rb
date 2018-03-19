@@ -1,4 +1,5 @@
 require 'sinatra'
+require 'sinatra/activerecord'
 require 'rake'
 require 'dotenv/load'
 require_relative './lib/twitter_bot.rb'

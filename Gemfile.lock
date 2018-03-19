@@ -1,9 +1,23 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    activemodel (5.1.5)
+      activesupport (= 5.1.5)
+    activerecord (5.1.5)
+      activemodel (= 5.1.5)
+      activesupport (= 5.1.5)
+      arel (~> 8.0)
+    activesupport (5.1.5)
+      concurrent-ruby (~> 1.0, >= 1.0.2)
+      i18n (~> 0.7)
+      minitest (~> 5.1)
+      tzinfo (~> 1.1)
     addressable (2.5.2)
       public_suffix (>= 2.0.2, < 4.0)
+    arel (8.0.0)
     buftok (0.2.0)
+    chronic (0.10.2)
+    concurrent-ruby (1.0.5)
     domain_name (0.5.20170404)
       unf (>= 0.0.5, < 1.0.0)
     dotenv (2.2.1)
@@ -20,9 +34,12 @@ GEM
     http_parser.rb (0.6.0)
     httparty (0.16.1)
       multi_xml (>= 0.5.2)
+    i18n (0.9.5)
+      concurrent-ruby (~> 1.0)
     json (2.1.0)
     memoizable (0.4.2)
       thread_safe (~> 0.3, >= 0.3.1)
+    minitest (5.11.3)
     multi_xml (0.6.0)
     multipart-post (2.0.0)
     mustermann (1.0.2)
@@ -38,6 +55,9 @@ GEM
       rack (~> 2.0)
       rack-protection (= 2.0.1)
       tilt (~> 2.0)
+    sinatra-activerecord (2.0.13)
+      activerecord (>= 3.2)
+      sinatra (>= 1.0)
     thread_safe (0.3.6)
     tilt (2.0.8)
     twitter (6.2.0)
@@ -51,21 +71,28 @@ GEM
       multipart-post (~> 2.0)
       naught (~> 1.0)
       simple_oauth (~> 0.3.0)
+    tzinfo (1.2.5)
+      thread_safe (~> 0.1)
     unf (0.1.4)
       unf_ext
     unf_ext (0.0.7.5)
+    whenever (0.10.0)
+      chronic (>= 0.6.3)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
+  activerecord
   dotenv
   gemoji
   httparty
   json
   rake
   sinatra
+  sinatra-activerecord
   twitter
+  whenever
 
 BUNDLED WITH
    1.16.0
