@@ -4,10 +4,15 @@ require 'sinatra/activerecord'
 require 'httparty'
 require 'json'
 require 'date'
+require_relative './emojis.rb'
 
 
-#Cronjob to notify the users about their kid vaccination
 task :hit_url do
+	#Hits the url provided inorder to keep the heroku app up and running
 	res = HTTParty.get("https://giphy-emoji.herokuapp.com")
-	# puts "#{res}"
+end
+
+task :daily_tweet do
+	#Tweet random gif 
+	send_daily_tweet #This method resides in emojis.rb file
 end

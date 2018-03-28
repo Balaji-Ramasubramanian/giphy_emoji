@@ -29,7 +29,7 @@ class TwitterBot
 						giphy_response = HTTParty.get(GIPHY_URL + emoji_text + GIPHY_API_KEY_URL)
 						giphy_response = giphy_response.body
 						giphy_parsed_response = JSON.parse(giphy_response)
-						gif = "#{giphy_parsed_response["data"][0]["url"]}"
+						gif = giphy_parsed_response["data"][0]["url"]
 						$rest_client.update("@#{obj.user.screen_name} #{gif}",options = { :in_reply_to_status_id => "#{obj.id}"})
 					rescue Exception => e
 						puts "Exception Occured!"
