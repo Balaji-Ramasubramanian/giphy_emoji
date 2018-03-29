@@ -34,6 +34,6 @@ def send_daily_tweet
 	giphy_response = giphy_response.body
 	giphy_parsed_response = JSON.parse(giphy_response)
 	gif = giphy_parsed_response["data"][0]["url"]
-	$rest_client.update("Hey all! check out today's gif! #{gif}")
+	$rest_client.update("#{EMOJIS[rand_number]} #{gif}")
 
 end

@@ -4,3 +4,7 @@
 # every 30.minutes do
 # 	rake "hit_url"
 # end
+
+# every 1.day :at =>"8:00 am" do
+# 	rake "daily_tweet"
+# end
